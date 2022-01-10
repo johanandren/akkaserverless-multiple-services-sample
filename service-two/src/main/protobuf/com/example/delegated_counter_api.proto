@@ -1,0 +1,22 @@
+// Action for delegating requests to the entity in another service
+syntax = "proto3";
+
+import "akkaserverless/annotations.proto";
+import "google/api/annotations.proto";
+
+package com.example;
+
+message IncreaseCounterRequest {
+  string counter_id = 1;
+}
+
+message IncreaseCounterResult{
+}
+
+service DelegatedCounterService {
+  option (akkaserverless.codegen) = {
+    action: {}
+  };
+
+  rpc IncreaseCounter(IncreaseCounterRequest) returns (IncreaseCounterResult);
+}
