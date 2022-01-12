@@ -24,7 +24,7 @@ locally, or that it is deployed and that service-two is configured to reach the 
 
 Deploy service one (as `service-one`) and expose a public route so that it can be reached.
 
-It is now available as `some-name-2321.us-east1.apps.akkaserverless.dev` over gRPC. When running both services run deployed
+It is now available as `bitter-mode-0305.us-east1.apps.akkaserverless.dev` over gRPC. When running both services run deployed
 in Akka Serverless, looking up the service using the deployed name and making it secure with TLS is taken care of for us, 
 but when connecting to the public route of the service we need to provide some config for that.
 
